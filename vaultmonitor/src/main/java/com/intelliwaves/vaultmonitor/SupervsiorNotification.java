@@ -1,6 +1,6 @@
 package com.intelliwaves.vaultmonitor;
 
-import java.text.ParseException;
+//import java.text.ParseException;
 //import java.text.ParsePosition;
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
@@ -17,7 +17,7 @@ public class SupervsiorNotification {
 	
     @GET
     @Produces(MediaType.TEXT_PLAIN)
-    public String getIt() throws ParseException {
+    public String getIt() {
     	int id = supervisorOnDuty();
     	Supervisor supervisor = new Supervisor(id);
     	String msg = supervisor.showmsg();
